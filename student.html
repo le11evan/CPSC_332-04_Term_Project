@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles/phpStyles.css"> <!-- imports css stylesheet -->
+            <title>Students</title>
+        </head>
+
+        <body>
+            <div class="showcase">
+                <header>
+                    <div class="headerLayout">
+                        <div class="container flex">
+                            <p class="pageTitle">Students</p>
+                            <nav class="headNav">
+                                <ul>
+                                    <li><a class="menuItem" href="index.html">Home</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <section>
+                    </br>
+                    <b>Get Class Registraion Data</b></br>
+                    <form class="entryForm" action="studentdata.php" method="POST">
+                        <div class="inputBoxes"><br>
+                            <label id="Cnum-label" for="cnum">Course Number (Surround in " "):</label><br>
+                            <input type="text" name="cnum" size="30" value="" class="controls" required placeholder="Enter Course Number"><br><br>
+                        </div>
+
+                        <div class="submit-area">
+                            <input class="submit" name="submit-1" type="submit" value="Submit">
+                        </div> 
+                    </form> 
+
+                    </br>
+                    <b>Get Data on All Classes Taken by Student</b></br>
+                    <form class="entryForm" action="studentdata.php" method="POST">
+                        <div class="inputBoxes"><br>
+                            <label id="CWID-label" for="cwid">Campus Wide ID (CWID) (Surround in " "):</label><br>
+                            <input type="text" name="cwid" size="30" value="" class="controls" required placeholder="Enter your CWID"><br><br>
+                        </div>
+
+                        <div class="submit-area">
+                            <input class="submit" name="submit-2" type="submit" value="Submit">
+                        </div> 
+                    </form>
+                </section>
+            </div>
+        </body>
+    </main>
+</html>

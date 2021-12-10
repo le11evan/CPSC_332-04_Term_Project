@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles/phpStyles.css"> <!-- imports css stylesheet -->
+            <title>Professors</title>
+        </head>
+
+        <body>
+            <div class="showcase">
+                <header>
+                    <div class="headerLayout">
+                        <div class="container flex">
+                            <p class="pageTitle">Professors</p>
+                            <nav class="headNav">
+                                <ul>
+                                    <li><a class="menuItem" href="index.html">Home</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+
+                <section>
+                    </br>
+                    <b>Get Professor's Class Data</b></br>
+                    <form class="entryForm" action="profdata.php" method="POST">
+                        <div class="inputBoxes"><br>
+                            <label id="ssn-label" for="ssn">Social Security Number (ex: 123456789 ):</label><br>
+                            <input type="text" name="ssn" size="30" value="" class="controls" required placeholder="Enter your SSN"><br><br>
+                        </div>
+
+                        <div class="submit-area">
+                            <input class="submit" name="submit-1" type="submit" value="Submit">
+                        </div>  
+                    </form> 
+
+                    </br>
+                    <b>Get Professor's Course Section Grade Data</b></br>
+                    <form class="entryForm" action="profdata.php" method="POST">
+                        <div class="inputBoxes"><br>
+                            <label id="Cnum-label" for="cnum">Course Number (ex: 123456):</label><br>
+                            <input type="text" name="cnum" size="30" value="" class="controls" required placeholder="Enter Course Number"><br><br>
+                            <label id="Snum-label" for="snum">Section Number (Surround in " "):</label><br>
+                            <input type="text" name="snum" size="30" value="" class="controls" required placeholder="Enter Section Number"><br><br>
+                        </div> 
+                        
+                        <div class="submit-area">
+                            <input class="submit" name="submit-2" type="submit" value="Submit">
+                        </div> 
+                    </form> 
+                </section>
+            </div>
+        </body>
+    </main>
+</html>

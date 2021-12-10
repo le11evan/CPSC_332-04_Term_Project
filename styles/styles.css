@@ -1,0 +1,68 @@
+/* === Attributes === */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* === Classes === */
+.showcase {
+    background-color: white;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    font-size: larger;
+    height: 80px;
+    text-align: center;
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.container ul {
+    display: flex;
+    padding: 20px;
+}
+
+.container .menuItem {
+    background-color: royalblue;
+    color: white;
+    border-radius: 17px;
+    padding: 15px;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .menuItem:hover {
+    background-color: black;
+}
+
