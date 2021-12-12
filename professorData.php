@@ -5,7 +5,7 @@
         if (isset($_POST['submit-1'])) { // if form 1 submitted
             // get titles, classrooms, meeting days & times of classes
             // titles -> courses table | classrooms & meetings days -> sections table
-            require_once('mconnect.php');
+            require_once('connect.php');
             echo 'Connected to Form 1 Successfully...<p><br>';
 
             $inputSSN =  $_POST['ssn'];
@@ -19,7 +19,7 @@
             echo '
             <ul style="list-style-type: none; box-sizing: border-box; padding: 0; margin: 0; display: flex; padding: 25px;">
                 <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="index.html">Home</a></li>
-                <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="profs.html">Back</a></li>
+                <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="professor.html">Back</a></li>
             </ul>';
 
             echo '<p style="font-size: 25px; padding-left: 10px;"><strong>Scheduling:</strong><p>';
@@ -54,7 +54,7 @@
             echo '
             <ul style="list-style-type: none; box-sizing: border-box; padding: 0; margin: 0; display: flex; padding: 25px;">
                 <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="index.html">Home</a></li>
-                <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="profs.html">Back</a></li>
+                <li><a class="menuItem" style="text-decoration: none; background-color: royalblue; color: white; border-radius: 17px; padding: 10px; margin: 0 10px; align-items: center; justify-content: space-between;" href="professor.html">Back</a></li>
             </ul>';
 
             echo '<p style="font-size: 25px; padding-left: 10px;"><strong>Grades:</strong><p>';
