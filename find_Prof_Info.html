@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico"
+        type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Find Professor Info</title>
+        <script>
+            function checkForm() {
+                let x = document.forms["search_form"]["search_pSSN"].value;
+                let re = new RegExp('[0-9][0-9][0-9]\-[0-9][0-9]\-[0-9][0-9][0-9][0-9]');
+                if (!x.match(re)) {
+                    alert("Error invalid input! Please try again.");
+                    document.forms["search_form"].reset();
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">CPSC 332-04 Term Project</a>
+        
+            <ul class="nav navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="find_Courses.html">Find Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="find_Grades.html">Find Grades</a></li>
+                <li class="nav-item"><a class="nav-link" href="find_Prof_Info.html">Find Professor Info</a></li>
+                <li class="nav-item"><a class="nav-link" href="find_Grade_Count.html">Find Grade Count</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <form name="search_form" action="professor_info.php" method="POST"
+            onsubmit="return checkForm()">
+                <div class="form-group">
+                    <label for="pSSN">Course Number</label>
+                    <input type="text" name="search_pSSN" 
+                    class="form-control" id="pSSN" placeholder="e.g. 123-45-6789"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </body>
+</html>
