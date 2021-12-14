@@ -12,7 +12,7 @@
         
             <ul class="nav navbar-nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <   li class="nav-item"><a class="nav-link" href="find_Courses.html">Find Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="find_Courses.html">Find Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="find_Grades.html">Find Grades</a></li>
                 <li class="nav-item"><a class="nav-link" href="find_Prof_Info.html">Find Professor Info</a></li>
                 <li class="nav-item"><a class="nav-link" href="find_Grade_Count.html">Find Grade Count</a></li>
